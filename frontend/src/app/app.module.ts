@@ -16,7 +16,7 @@ import { LoginComponent } from './components/login/login.component';
 
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';bootstrap: [AppComponent]
 import { ToastrModule } from 'ngx-toastr';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
@@ -104,6 +104,6 @@ import { PasswordDialogComponent } from './components/password-dialog/password-d
     MatFormFieldModule,
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
