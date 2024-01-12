@@ -1,0 +1,49 @@
+.full-width {
+  width: 100%;
+}
+
+.shipping-card {
+  min-width: 120px;
+  margin: 20px auto;
+}
+
+.mat-radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+/* Example styles */
+mat-form-field {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6rem;
+}
+
+input.mat-input-element {
+  font-size: 16px;
+  color: #333;
+}
+.s011 form .inner-form .main-form .row .input-wrap {
+    background:whitesmoke;
+    border-radius: 3px;
+    height: 71px;
+    position: relative;
+    padding: 10px 15px 10px 48px;
+}
+
+

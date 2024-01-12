@@ -1,0 +1,211 @@
+<div class="wrapper ">
+  <nav class="main-header navbar navbar-expand navbar-dark elevation-4">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </li>
+
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+     <nav class="navbar-item">
+  <div class="navbar-search">
+    <input type="text" class="search-input" placeholder="Search" [ngClass]="{'expanded': isSearchExpanded}" (focus)="expandSearch()" (blur)="collapseSearch()">
+    <button class="search-button" (click)="toggleSearch()">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+</nav>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <div class="media">
+              <img
+                src="assets/img/user1-128x128.jpg"
+                alt="User Avatar"
+                class="img-size-50 mr-3 img-circle"
+              />
+
+            </div>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <div class="media">
+              <img
+                src="assets/img/user8-128x128.jpg"
+                alt="User Avatar"
+                class="img-size-50 img-circle mr-3"
+              />
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"
+                    ><i class="fas fa-star"></i
+                  ></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted">
+                  <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                </p>
+              </div>
+            </div>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <div class="media">
+              <img
+                src="assets/img/credit/user3-128x128.jpg"
+                alt="User Avatar"
+                class="img-size-50 img-circle mr-3"
+              />
+              <div class="media-body">
+
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted">
+                  <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                </p>
+              </div>
+            </div>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- notification bar  -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <div matBadge="4" matBadgeOverlap="false" class="demo-section">
+            <i class="far fa-bell"></i>
+          </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer"
+            >See All Notifications</a
+          >
+        </div>
+      </li>
+      <!-- profile  -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <a
+            class="nav-link nav-profile d-flex align-items-center pe-0 show"
+            href="#"
+            data-bs-toggle="dropdown"
+            aria-expanded="true"
+          >
+            <img
+              src="assets/img/Duksaen.png"
+              alt="User Avatar"
+              class="img-size-50 mb-3 img-circle"
+            />
+            <span class="d-none d-md-block dropdown-toggle ps-2"></span> </a
+          ><!-- End Profile Iamge Icon -->
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <li class="dropdown-header">
+            <h6></h6>
+            <span></span>
+          </li>
+
+          <div class="dropdown-divider"></div>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="users-profile.html"
+            >
+              <i class="fa fa-user"></i>
+              <span>My Profile</span>
+            </a>
+          </li>
+
+          <div class="dropdown-divider"></div>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="users-profile.html"
+            >
+              <i class="fa fa-cog"></i>
+              <span>Account Settings</span>
+            </a>
+          </li>
+
+          <div class="dropdown-divider"></div>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="pages-faq.html"
+            >
+              <i class="fa fa-inbox"></i>
+              <span>Inbox</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"  (click)="logout()"
+
+            >
+              <i class="fa fa-sign" aria-hidden="true"></i>
+              <span>logOut</span>
+            </a>
+          </li>
+          <div class="dropdown-divider"></div>
+          <a
+            mat-raised-button
+            href=""
+            class="dropdown-item dropdown-footer"
+            target="_blank"
+            >Link</a
+          >
+        </div>
+      </li>
+
+
+
+    </ul>
+  </nav>
+
+
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="index3.html" class="brand-link">
+      <img
+        src="assets/img/Duksaen.png"
+        alt="AdminLTE Logo"
+        class="brand-image img-circle elevation-3"
+        style="opacity: 0.8"
+      />
+      <span class="brand-text font-weight-light">Portal Admin</span>
+    </a>
+
+    <div class="sidebar">
+      <!-- navbars  -->
+      <app-navbar></app-navbar>
+      <!-- end navbars  -->
+    </div>
+  </aside>
+
+
+   <div class="preloader flex-column justify-content-center align-items-center">
+    <div id="preloader"></div>
+
+  </div>
+  <!-- <app-footer></app-footer> -->
+</div>

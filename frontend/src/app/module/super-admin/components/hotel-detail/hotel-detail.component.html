@@ -1,0 +1,133 @@
+<div class="content-wrapper pt-5">
+
+<div class="col-xl-12 p-4">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="mb-0">Registred Hotel Details </h3>
+            </div>
+
+          </div>
+        </div>
+
+    <mat-form-field appearance="outline">
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+</mat-form-field>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort>
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="hotelAddress">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> hotelAddress </th>
+      <td mat-cell *matCellDef="let row"> {{row.hotelAddress}} </td>
+    </ng-container>
+
+    <!-- Progress Column -->
+    <ng-container matColumnDef="hotelName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> hotelName </th>
+      <td mat-cell *matCellDef="let row"> {{row.hotelName}} </td>
+    </ng-container>
+     <!-- Progress Column -->
+    <ng-container matColumnDef="enabled">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> enabled </th>
+      <td mat-cell *matCellDef="let row"> {{row.enabled}} </td>
+    </ng-container>
+      <!-- Progress Column -->
+    <ng-container matColumnDef="approved">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+      <td mat-cell *matCellDef="let row"> {{row.approved}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="category">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> category </th>
+      <td mat-cell *matCellDef="let row"> {{row.category}} </td>
+    </ng-container>
+
+    <!-- address_1 Column -->
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> email </th>
+      <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+    </ng-container>
+    <!-- action  Column -->
+      <ng-container matColumnDef="Enable/Disable">
+        <th mat-header-cell *matHeaderCellDef> Enable/Disable </th>
+        <td mat-cell *matCellDef="let row">
+
+
+           <!-- <button >Enable Hotel</button> -->
+           <mat-slide-toggle (click)="enableUser(row._id)">Enable</mat-slide-toggle>
+
+
+      </td>
+      </ng-container>
+        <!-- loginto  Column -->
+      <ng-container matColumnDef="Action">
+        <th mat-header-cell *matHeaderCellDef> Action </th>
+
+
+ <td mat-cell *matCellDef="let row">
+
+          <mat-icon color="warn" (click)="rejectHotel(row._id)"
+            >delete</mat-icon
+          >
+
+
+      </td>
+      </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    <!-- Row shown when there is no matching data. -->
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+    </tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+</div>
+
+
+
+<div *ngFor="let hotel of hotels">
+  <h2>{{ hotel.name }}</h2>
+  <p>Address: {{ hotel.hotelName }}</p>
+  <p>Rating: {{ hotel.email }}</p>
+  <!-- Add other hotel information you want to display -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+</div>

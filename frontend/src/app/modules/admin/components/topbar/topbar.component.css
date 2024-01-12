@@ -1,0 +1,113 @@
+nav.main-header.navbar.navbar-expand.navbar-dark.elevation-4 {
+    height: 8.5vh;
+    background: #343a40;
+}
+.navbar[_ngcontent-voi-c241] {
+
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #555;
+}
+
+.nav-link i {
+  margin-right: 5px;
+}
+
+.navbar-search-block {
+  display: none;
+  align-items: center;
+}
+
+.navbar-search-open {
+  display: flex;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.input-group-sm {
+  margin-right: 10px;
+}
+
+.form-control-navbar {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.input-group-append button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.input-group-append button i {
+  color: #555;
+}
+
+.input-group-append button:hover i {
+  color: #777;
+}
+.navbar {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.navbar-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-input.expanded {
+  width: 300px;
+}
+
+.search-button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.search-button i {
+  color: #888;
+}
+
+/* logo  */
+/* Assuming the desired avatar size is 64px */
+.avatar {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+

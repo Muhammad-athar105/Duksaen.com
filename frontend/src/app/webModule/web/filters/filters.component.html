@@ -1,0 +1,106 @@
+<div class="s011">
+  <form [formGroup]="searchForm" (ngSubmit)="search()">
+    <div class="inner-form">
+      <header>
+        <div class="travel-type-wrap">
+          <!-- <div class="item">
+            <marquee behavior="" direction="left"
+              >search your Stays
+              <a href="">search</a>
+            </marquee>
+          </div> -->
+        </div>
+      </header>
+      <div class="main-form" id="main-form">
+        <div class="row">
+          <div class="input-wrap">
+            <mat-form-field>
+              <mat-label>GOING TO</mat-label>
+              <input
+                matInput
+                type="text"
+                formControlName="hotelAddress"
+                placeholder="Destination, hotel name"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row second">
+          <div class="col-4 input-wrap">
+            <mat-form-field>
+              <mat-label>CheckIn</mat-label>
+              <input
+                matInput
+                [matDatepicker]="picker"
+                formControlName="checkIn"
+                placeholder="Choose a date"
+              />
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-4 input-wrap">
+            <mat-form-field>
+              <mat-label>Checkout</mat-label>
+              <input
+                matInput
+                [matDatepicker]="picker2"
+                formControlName="checkout"
+                [formControl]="serializedDate"
+              />
+              <mat-hint></mat-hint>
+              <mat-datepicker-toggle
+                matIconSuffix
+                [for]="picker2"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+          </div>
+
+          <div class="input-wrap">
+            <mat-form-field>
+              <mat-label>Travaelers</mat-label>
+              <mat-select
+                formControlName="noTravaelers"
+                required
+              >
+                <mat-option>--</mat-option>
+                <mat-option *ngFor="let animal of travlar" [value]="animal">
+                  {{ animal.name }}
+                </mat-option>
+              </mat-select>
+
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row last">
+          <button class="btn-search" type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- sdfghjkljhgfdsdfghjklkjhgfdsdfghjkl0 -->
+
+
+
+

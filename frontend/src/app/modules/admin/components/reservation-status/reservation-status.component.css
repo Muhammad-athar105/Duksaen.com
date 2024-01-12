@@ -1,0 +1,47 @@
+/* Additional custom CSS styles */
+
+/* Add some spacing between the cards */
+.card {
+  margin-bottom: 20px;
+}
+
+/* Customize the card header */
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+}
+
+/* Customize the card body */
+.card-body {
+  padding: 10px;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Customize the card footer */
+.card-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Center the buttons horizontally in the card footer */
+.card-footer .btn {
+  flex: 1;
+}
+
+/* Add some space between the buttons */
+.card-footer .btn + .btn {
+  margin-left: 10px;
+}

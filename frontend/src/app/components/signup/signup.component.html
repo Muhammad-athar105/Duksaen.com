@@ -1,0 +1,54 @@
+<!--
+<div class="content-wrapper">
+<div class="container mt-5 mb-5 d-flex justify-content-center align-items-center">
+
+  <div class="card p-3 text-center py-4">
+
+      <div>
+          <img src="https://i.imgur.com/dkWaSol.png" width="70">
+      </div>
+      <form  (ngSubmit)="signup(formName.value)" >
+      <div class="px-sm-4 mt-3 px-3">
+
+          <input class="form-control" ngModel name="name" formControlName="fulName" type="text" placeholder="Full  name ">
+          <input class="form-control mt-3" ngModel name="email" formControlName="email" placeholder="Email address">
+          <input class="form-control mt-3" ngModel name="password" formControlName="password" placeholder="Password">
+
+      </div>
+
+      <div class="px-5 mt-4">
+          <button class="btn btn-secondary w-100 text-uppercase" type="submit">Signup</button>
+      </div>
+  </form>
+
+      <div class="px-5">
+          <a routerLink="/login">Already Registered  </a>
+          <span class="terms">By creating an account, you agree and accept our <a href="#" class="text-decoration-none">terms</a> and <a href="#" class="text-decoration-none">conditions</a>.</span>
+      </div>
+
+
+  </div>
+
+</div>
+</div>
+ -->
+
+
+
+    <form action="/register"  method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    
+

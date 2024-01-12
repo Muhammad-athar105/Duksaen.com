@@ -1,0 +1,43 @@
+nav.main-header.navbar.navbar-expand.navbar-dark.elevation-4 {
+    height: 57px;
+      background: #343a40;
+}
+input.search-input {
+    color: white;
+}
+
+.navbar {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.navbar-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-input.expanded {
+  width: 300px;
+}
+
+.search-button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.search-button i {
+  color: #888;
+}
+

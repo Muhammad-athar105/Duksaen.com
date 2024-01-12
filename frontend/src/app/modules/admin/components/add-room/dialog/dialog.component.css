@@ -1,0 +1,87 @@
+.container
+{
+  width: 10%;
+  height: 20vh;
+  background: #000;
+  color: #fff;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+
+
+/*
+ <mat-form-field appearance="outline">
+      <mat-label>Room Number</mat-label>
+      <input
+        matInput
+        formControlName="roomNumber"
+        required
+        formControlName="roomNumber"
+      />
+      <mat-error *ngIf="roomForm.controls['roomNumber'].hasError('required')">
+        Room number is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="ml-3" appearance="outline">
+      <mat-label>Room Type</mat-label>
+      <mat-select formControlName="roomType">
+        <mat-option *ngFor="let type of roomTypes" [value]="type.value">{{
+          type.viewValue
+        }}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="roomForm.controls['roomType'].hasError('required')">
+        Room type is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Price</mat-label>
+      <input matInput formControlName="price" type="number" required />
+      <mat-error *ngIf="roomForm.controls['price'].hasError('required')">
+        Price is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="ml-3" appearance="outline">
+      <mat-label>occupancy</mat-label>
+      <input matInput formControlName="occupancy" type="number" required />
+      <mat-error *ngIf="roomForm.controls['occupancy'].hasError('required')">
+       number of adult is required
+      </mat-error>
+    </mat-form-field>
+     <mat-form-field class="ml-3" appearance="outline">
+      <mat-label>booking Policy </mat-label>
+      <textarea matInput formControlName="bookingPolicy"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+       <mat-label>BedTypes</mat-label>
+      <mat-select formControlName="BedTypes">
+        <mat-option *ngFor="let type of BedTypes" [value]="type.value">{{
+          type.viewValue
+        }}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="roomForm.controls['roomType'].hasError('required')">
+        Room type is required
+      </mat-error>
+    </mat-form-field>
+      <mat-form-field class="" appearance="outline">
+      <mat-label>Room View </mat-label>
+      <input
+        matInput
+        placeholder="Ex.  See view "
+        value=""
+        formControlName="Room View "
+      />
+    </mat-form-field> */

@@ -1,0 +1,54 @@
+/* app.component.css */
+mat-dialog-content.mat-mdc-dialog-content.mdc-dialog__content.mat-typography {
+    color: black;
+    /* width: 1px; */
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 7, 1.1);
+}
+
+
+
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+mat-form-field .mat-form-field-outline {
+  outline: 2px solid #ccc;
+}
+
+mat-form-field .mat-form-field-outline-thick {
+  outline: 2px solid #ccc;
+}
+
+mat-form-field.mat-focused .mat-form-field-outline {
+  outline-color: #007bff;
+}
+
+mat-form-field.mat-focused .mat-form-field-outline-thick {
+  outline-color: #007bff;
+}
+
+mat-select {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  form {
+    max-width: 100%;
+  }
+}

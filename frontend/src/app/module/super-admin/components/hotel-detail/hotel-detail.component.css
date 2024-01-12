@@ -1,0 +1,24 @@
+table {
+  width: 100%;
+  background-color:#4b545c;;
+  color: white;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+  color: #fff;
+}
+
+td, th {
+  width: 25%;
+  color: #ffff;
+}
+input#mat-input-0 {
+    color: white;
+}
+mat-label.ng-tns-c71-0 {
+    color: white;
+}
+
+

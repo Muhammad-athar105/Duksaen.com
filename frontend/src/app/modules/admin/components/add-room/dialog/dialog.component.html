@@ -1,0 +1,154 @@
+<h1 mat-dialog-title>Add Rooms</h1>
+
+<form
+  class="example-form"
+  [formGroup]="roomForm"
+  (ngSubmit)="onFormsubmit()"
+  enctype="multipart/form-data"
+>
+  <div mat-dialog-content>
+    <!-- <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Room hotelId </mat-label>
+      <input
+        matInput
+        placeholder="Ex. hotelId"
+        value=""
+        formControlName="hotelId"
+      />
+    </mat-form-field> -->
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field appearance="outline">
+            <mat-label>Price</mat-label>
+            <input matInput formControlName="price" type="number" required />
+            <mat-error *ngIf="roomForm.controls['price'].hasError('required')">
+              Price is required
+            </mat-error>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="ml-3" appearance="outline">
+            <mat-label>Description</mat-label>
+            <textarea matInput formControlName="description"></textarea>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field appearance="outline">
+            <mat-label>Room Number</mat-label>
+            <input matInput required formControlName="roomNumber" />
+            <mat-error
+              *ngIf="roomForm.controls['roomNumber'].hasError('required')"
+            >
+              Room number is required
+            </mat-error>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="ml-3" appearance="outline">
+            <mat-label>Room Type</mat-label>
+            <mat-select formControlName="roomType">
+              <mat-option *ngFor="let type of roomTypes" [value]="type.value">{{
+                type.viewValue
+              }}</mat-option>
+            </mat-select>
+            <mat-error
+              *ngIf="roomForm.controls['roomType'].hasError('required')"
+            >
+              Room type is required
+            </mat-error>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field appearance="outline">
+            <mat-label> bedTypes</mat-label>
+            <input matInput formControlName="bedTypes" type="text" required />
+            <mat-error
+              *ngIf="roomForm.controls['bedTypes'].hasError('required')"
+            >
+              bedTypes is required
+            </mat-error>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="ml-3" appearance="outline">
+            <mat-label>booking Policy </mat-label>
+            <textarea matInput formControlName="bookingPolicy"></textarea>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field appearance="outline">
+            <mat-label> occupancy</mat-label>
+            <input matInput formControlName="occupancy" type="text" required />
+            <mat-error
+              *ngIf="roomForm.controls['occupancy'].hasError('required')"
+            >
+              occupancy is required
+            </mat-error>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field appearance="outline">
+            <mat-label> roomView</mat-label>
+            <input matInput formControlName="roomView" type="text" required />
+            <mat-error
+              *ngIf="roomForm.controls['roomView'].hasError('required')"
+            >
+              roomView is required
+            </mat-error>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field appearance="outline">
+            <mat-label> amenities</mat-label>
+            <input matInput formControlName="amenities" type="text" required />
+            <mat-error
+              *ngIf="roomForm.controls['amenities'].hasError('required')"
+            >
+              amenities is required
+            </mat-error>
+          </mat-form-field>
+        </td>
+        <td>
+          <!-- <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Room pictures </mat-label>
+            <input type="file" formControlName="pictures" />
+          </mat-form-field> -->
+          <mat-label>Room pictures </mat-label>
+          <input
+            type="file"
+            #fileInput
+            (change)="onFileSelected(fileInput)"
+            formControlName="roomPictures"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+
+    <button mat-raised-button color="accent" type="submit">
+      {{ actionbtn }}
+    </button>
+  </div>
+</form>

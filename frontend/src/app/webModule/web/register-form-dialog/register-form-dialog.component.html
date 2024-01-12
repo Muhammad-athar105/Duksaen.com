@@ -1,0 +1,136 @@
+
+
+<div class="container">
+  <h2 class="text-center pt-5 primary">Register Your Hotel </h2>
+<form  [formGroup]="registrationForm"
+          (ngSubmit)="Signup()"
+          enctype="multipart/form-data" >
+
+    <div class="row">
+<div class="col-6">
+          <mat-form-field appearance="outline" class="d-block mb-0">
+<mat-label>hotelName</mat-label>
+<input type="text" formControlName="hotelName"  matInput placeholder="hotelName" />
+<mat-error *ngIf="">
+</mat-error>
+</mat-form-field>
+</div>
+
+<div class="col-6">
+          <mat-form-field appearance="outline" class="d-block ">
+<mat-label>userName</mat-label>
+<input type="text" formControlName="userName"  matInput placeholder="userName" />
+<mat-error *ngIf="">
+</mat-error>
+</mat-form-field>
+</div>
+</div>
+<div class="row">
+        <div class="col-6">
+<mat-form-field appearance="outline" class="d-block mb-0">
+<mat-label>email</mat-label>
+<input type="text" formControlName="email" matInput placeholder="email" />
+<mat-error *ngIf="">
+</mat-error>
+</mat-form-field>
+        </div>
+        <div class="col-6">
+
+ <mat-form-field appearance="outline">
+<mat-label>Enter your password</mat-label>
+<input type="password" formControlName="password"  matInput [type]="hide ? 'password' : 'text'">
+<button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+</button>
+  <mat-error *ngIf="">
+</mat-error>
+</mat-form-field>
+        </div>
+</div>
+
+<div class="row">
+<div class="col-6">
+     <mat-form-field appearance="outline" class="d-block mb-0">
+<mat-label>category</mat-label>
+<input type="text" formControlName="category"  matInput placeholder="category" />
+<mat-error *ngIf="">
+</mat-error>
+</mat-form-field>
+</div>
+<div class="col-6">
+     <mat-form-field appearance="outline" class="d-block mb-0" >
+  <mat-label>Address </mat-label>
+  <textarea matInput     formControlName="hotelAddress"></textarea>
+    <mat-error *ngIf="">
+</mat-error>
+</mat-form-field>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-6">
+
+<mat-form-field class="d-block mb-0" appearance="outline">
+<mat-label>Telephone</mat-label>
+
+<input type="tel"     formControlName="phoneNumber" matInput placeholder="555-555-1234">
+<mat-icon matSuffix>mode_edit</mat-icon>
+</mat-form-field>
+
+</div>
+<div class="col-6">
+      <mat-form-field appearance="outline" class="d-block mb-0" >
+  <mat-label>country </mat-label>
+  <input type="text" formControlName="country"  matInput placeholder="category" />
+    <mat-error *ngIf="">
+</mat-error>
+</mat-form-field>
+</div>
+</div>
+
+<div class="row">
+<div class="col-6">  <div class="col-sm-6">
+                <input
+                     class="input-text"
+                  type="file"
+                  id="formFile"
+                  formControlName="profilePictures"
+                  (change)="onFileSelected($event)"
+                />
+              </div>
+
+            </div>
+<div class="col-6">
+     <mat-form-field appearance="outline" class="d-block mb-0">
+<mat-label>cnic</mat-label>
+<input type="number" formControlName="cnic"  matInput placeholder="cnic" />
+<mat-error *ngIf="">
+</mat-error>
+</mat-form-field>
+</div>
+</div>
+
+<div class="row">
+
+<div class="col-6">
+     <mat-form-field appearance="outline" class="d-block mb-0" >
+  <mat-label>Hotel description </mat-label>
+  <textarea matInput     formControlName="description"></textarea>
+    <mat-error *ngIf="">
+</mat-error>
+</mat-form-field>
+</div>
+<div class="col-6">
+<button name="register" class="register" value="Register" type="submit">submit</button>
+
+</div>
+</div>
+
+
+
+  </form>
+
+</div>
+
+

@@ -1,0 +1,28 @@
+
+<div class="container">
+  <h1>Reservation</h1>
+
+  <mat-form-field  appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Enter your name" >
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput type="email" placeholder="Enter your email">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Number of Guests</mat-label>
+    <input matInput type="number" placeholder="Enter the number of guests">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">Reserve</button>
+</div>

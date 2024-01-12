@@ -1,0 +1,28 @@
+<div class="content-wrapper pt-5">
+ <!-- reservation.component.html -->
+
+<h1>Reservation Requests</h1>
+
+<!-- <div *ngFor="let request of reservedata">
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="card-title">{{ request.name }}</h5>
+      <h6 class="card-subtitle text-muted">{{ request.date | date }}</h6>
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{ request.details }}</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <button class="btn btn-primary" (click)="approveRequest(request)">Approve</button>
+      <button class="btn btn-danger" (click)="rejectRequest(request)">Reject</button>
+    </div>
+  </div>
+</div> -->
+
+
+<div *ngFor="let reservation of reservation">
+  <h2>Reservation Details for ID: {{ reservation.firstName }}</h2>
+  <!-- Display other reservation details as needed -->
+</div>
+
+</div>

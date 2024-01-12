@@ -1,0 +1,288 @@
+
+
+
+.example-form-field {
+  width: 200px;
+}
+
+
+.preview_sale {
+    font-weight: 700;
+}
+
+.preview_sale {
+    position: absolute;
+    top: 14px;
+    right: 19px;
+}
+.card-listing .sale-window, .sidebar-ad-widget .sale-window {
+    font-weight: 700;
+}
+
+.sale-window {
+    position: relative;
+    z-index: 3;
+    background: #5ecfb1;
+    padding: 8px 18px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 11px;
+    color: #fff;
+
+}
+.sale-window:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    border-top: 20px solid #5ecfb1;
+    border-left: 20px solid transparent;
+    margin-left: -16px;
+    top: 0;
+    bottom: auto;
+}
+.sale-window:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    border-bottom: 20px solid #5ecfb1;
+    border-left: 20px solid transparent;
+    margin-left: -16px;
+    top: auto;
+    bottom: 0;
+}
+
+.rate-class-name span {
+    background: #18458b;
+    color: #fff;
+    float: right;
+    position: relative;
+    bottom: 65px;
+    left: -25px;
+    font-weight: 600;
+    border-radius: 5px 5px 5px 0;
+    padding: 12px;
+    -webkit-box-shadow: 0px 0px 0px 3px rgba(255,255,255,.2);
+    box-shadow: 0px 0px 0px 3px rgba(255,255,255,.2);
+}
+
+
+/* reviews cared end  */
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+
+img.img-fluid {
+    width: 23rem;
+    height: 40vh;
+}
+.img-square-wrapper {
+  position: relative;
+
+  display: inline-block;
+}
+
+.img-button {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color:hwb(0 93% 6%);
+  font-size: large;
+  color:black  ;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-square-wrapper:hover .img-button {
+  display: block;
+  opacity: 1;
+}
+
+.img-square-wrapper {
+  overflow: hidden;
+}
+
+.img-square-wrapper img {
+  transition: transform 0.3s ease;
+}
+
+.img-square-wrapper:hover img {
+  transform: scale(0.9);
+}
+
+.fa-star {
+  position: relative;
+}
+
+.fa-star:hover::after {
+  content: "This star rating is provided to Duksa_en.com by the property, and is usually determined by an official hotel rating organisation or another third party.";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  background: #4d4b4b;
+  color: #fff;
+  padding: 5px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}
+.rating-box {
+  display: inline-block;
+  background-color: #f5f5f5;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.rating {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+h4 {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+
+h2{float:left; width:100%; color:#fff; margin-bottom:40px; font-size: 14px; position:relartive; z-index:3; margin-top:30px}
+h2 span{font-family: 'Libre Baskerville', serif; display:block; font-size:45px; text-transform:none; margin-bottom:20px; margin-top:30px; font-weight:700}
+h2 a{color:#fff; font-weight:bold;}
+
+
+/* .head{float:left;width:100%;} */
+.search-box{width:100%; margin:0 auto 40px; box-shadow:10px 13px 0 rgba(0,0,0,0.2);}
+.listing-block{ height:680px;width: 66%; padding-top:20px; overflow-y:scroll;}
+.slimScrollDiv{width:41%!important;}
+.map-box {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.media {background:#fff; position:relative; margin-bottom:15px;}
+.media img{width:100%;margin:0; height:150px;}
+.media-body{border:1px solid #bcbcbc; border-left:0; height:136px;}
+.media .price{float:left; width:100%; font-size:30px;font-weight:600; color:#4765AB;}
+.media .price small{display:block; font-size:17px; color:#232323;}
+.media .stats{float:left; width:100%; margin-top:10px;}
+.media .stats span{float:left; margin-right:10px; font-size:15px;}
+.media .stats span i{margin-right:7px; color:#4765AB;}
+.media .address{float:left; width:100%;font-size:14px; margin-top:5px; color:#888;}
+.media .fav-box{position:absolute; right:10px; font-size:20px; top:4px; color:#E74C3C;}
+iframe {
+    border: 0;
+    /* width: 173%; */
+    height: 100vh;
+}
+.map-box{background-color:#A3CCFF;}
+.img-square-wrapper[_ngcontent-wlu-c243] {
+    /* overflow: hidden; */
+    width: 78%;
+}
+
+
+
+.geodir-category-price {
+    font-size: 11px;
+    color: hwb(0 4% 95%);
+    font-weight: 600;
+    background: #f7f9fb;
+    padding: 9px 12px;
+    border-radius: 4px;
+    border: 1px dotted #e4e4e4;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.preview-fact .facilities-list li {
+  position: relative;
+}
+
+.preview-fact .facilities-list li:hover .fea-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.fl-wrap {
+    position: relative;
+}
+.facilities-list {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.facilities-list li {
+    margin-right: 14px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+}
+.facilities-list li i {
+    color: #adc7dd;
+    font-size: 16px;
+}
+.fa-concierge-bell:before {
+    content: "\f562";
+}
+.card-listing .facilities-list li span, .sidebar-ad-widget .facilities-list li span {
+    font-weight: 600;
+}
+
+.facilities-list li span {
+    position: absolute;
+    opacity: 0;
+    left: -20px;
+    top: -34px;
+    min-width: 90px;
+    color: #fff;
+    font-size: 11px;
+    visibility: hidden;
+    border-radius: 4px;
+    background: #18458b;
+}
+.azp_ptml_content {
+    color: #999;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+
+
+/* whatsup */
+

@@ -1,0 +1,4 @@
+.dark-mode .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .dark-mode .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+  background-color: #0006;
+  color: #fff;
+}

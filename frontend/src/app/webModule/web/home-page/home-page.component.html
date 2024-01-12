@@ -1,0 +1,202 @@
+
+<!-- ======= Header ======= -->
+<main id="main">
+  <!--====== Choose your distination start ===== -->
+  <section id="chefs" class="chefs">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2 class="ml-5">top rated Hotels </h2>
+        <p class="ml-5 pt-4 text-center">Discover Northern Area</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" *ngFor="let _hotel of allHotels">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img
+                [src]="
+                  'http://localhost:3000/hotelPics/' +
+                  (_hotel.pictures[0]?.fileName || '')
+                "
+                class="img-fluid"
+                alt=""
+              />
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4></h4>
+                  <span>{{ _hotel.hotelName }}</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <div class="container">
+  <section class="mx-auto my-5" style="max-width: 23rem;" >
+
+
+
+  </section>
+</div>
+ <div class="section-title">
+        <p class="text-center">Top Rated Reviews </p>
+
+      </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4"*ngFor="let review of reviews">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+
+      <div class="card-body"  >
+        <blockquote class="blockquote blockquote-custom bg-white px-3 pt-4">
+          <div class="blockquote-custom-icon bg-info shadow-1-strong">
+            <i class="fa fa-quote-left text-white"></i>
+          </div>
+          <p class="mb-0 mt-2 font-italic" >
+            Rating: {{ review.rating }}
+          </p>
+             <p>
+             Experience By : {{ review.name }}
+          </p>
+          <p>
+             comments : {{ review.comment }}
+          </p>
+
+        </blockquote>
+      </div>
+    </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+      <div class="row mt-5">
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Abasyan university</p>
+            </div>
+
+            <div class="open-hours">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>
+                Monday-Saturday:<br />
+                11:00 AM - 2300 PM
+              </p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>Engr.sidraehmad@gmail.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>0324-5191031</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0">
+          <form
+
+            [formGroup]="contactForm"
+             (ngSubmit)="onSubmit()"
+
+          >
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input
+                  type="text"
+
+                  class="form-control"
+                  id="name"
+                  formControlName="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input
+                  type="email"
+                  class="form-control"
+
+                  formControlName="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input
+                type="text"
+                class="form-control"
+
+                formControlName="subject"
+                id="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group mt-3">
+              <textarea
+                class="form-control"
+
+                rows="8"
+                formControlName="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-info" >Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+
+
+
+</main>
+
+
+
+
+
+
+

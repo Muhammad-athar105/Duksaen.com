@@ -1,0 +1,157 @@
+#header {
+     background: rgb(12 11 9);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    transition: all 0.5s;
+    z-index: 990;
+    padding: 5px 0;
+    top: -2px;
+}
+
+section#hero {
+    height: 85vh;
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: rgb(197, 189, 189);
+}
+
+.search-field {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-size: 14px;
+  width: 200px;
+}
+
+.search-field:focus {
+  border-color: #777;
+}
+
+
+#lists {
+  display:grid;}
+/* Styles for the navbar */
+.collapse.navbar-collapse {
+  position: relative;
+  padding-top: 50px;
+}
+
+/* Styles for the navbar links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  /* color: #333; */
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #6c757d;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff6b6b;
+}
+
+.nav-link:hover:before {
+  transform: scaleX(1);
+}
+
+/* Special effect for the Register and Login links */
+.nav-link.special-effect {
+  color: #fff;
+  background-color: #ff6b6b;
+  padding: 8px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link.special-effect:hover {
+  background-color: #f22c2c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Additional spacing for the navbar on small screens */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    padding-top: 30px;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
+}
+
+
+/* Styles for the button (visible by default) */
+.navbar-toggler {
+  display: block; /* Ensure the button is visible by default */
+}
+
+/* Styles for the button with white color and blur effect */
+.navbar-toggler {
+  background-color: white;
+  font-size: xx-small;
+  /* filter: blur(5px); Adjust the blur value as per your requirement */
+}
+
+/* Hover effect styles */
+.navbar-toggler:hover {
+  opacity: 0.8; /* Optionally, you can reduce the opacity on hover */
+}
+
+
+/* Media query for full-screen (large) screens (adjust the min-width as needed) */
+@media screen and (min-width: 909px) {
+  .navbar-toggler {
+    display: none; /* Hide the button on full-screen (large) screens */
+  }
+}
+
+
+@media screen and (max-width: 768px){
+.navbar-nav[_ngcontent-fbk-c239] {
+    padding-top: 30px;
+    border: 2px solid;
+}}
+
+
+
+
+

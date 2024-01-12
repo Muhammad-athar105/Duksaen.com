@@ -1,0 +1,33 @@
+
+
+
+<div class="wrapper">
+  <div class="logo">
+      <img src="assets/img/Duksaen.png" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+      Super admin
+  </div>
+  <form class="p-3 mt-3" [formGroup]="formlogin" (ngSubmit)="onSubmit()" >
+         <mat-form-field appearance="outline" class="d-block mb-2">
+    <mat-label>Registred @mail</mat-label>
+    <input formControlName="email" id="userName"  type="email" name="userName" matInput placeholder="Email" />
+  </mat-form-field>
+
+       <mat-form-field appearance="outline" class="d-block mb-2">
+    <mat-label>Password</mat-label>
+    <input type="password" formControlName="password" id="pwd" matInput placeholder="Password" />
+    <mat-error *ngIf="">
+    </mat-error>
+  </mat-form-field>
+      <button class="btn mt-3" type="submit">Login</button>
+
+  </form>
+  <div class="text-center fs-6">
+   <a routerLink="/login">This page is private  click here to hotel login page</a>
+
+  </div>
+
+</div>
+
+

@@ -1,0 +1,114 @@
+<h2 mat-dialog-title>Reservation Form Details</h2>
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="reservationForm" (ngSubmit)="submitReservationForm()">
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-form-field>
+          <input
+            matInput
+            formControlName="firstName"
+            ngModel=""
+            placeholder="First Name"
+            required
+          />
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6">
+        <mat-form-field>
+          <input
+            matInput
+            formControlName="lastName"
+            placeholder="Last Name"
+            required
+          />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <mat-form-field>
+      <input matInput formControlName="email" placeholder="Email" required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        formControlName="phoneNumber"
+        placeholder="Phone Number"
+        required
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        formControlName="nationality"
+        placeholder="Nationality"
+        required
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        [matDatepicker]="checkInDatepicker"
+        formControlName="checkIn"
+        placeholder="Check-in Date"
+        required
+      />
+      <mat-datepicker-toggle
+        matSuffix
+        [for]="checkInDatepicker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #checkInDatepicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        [matDatepicker]="checkOutDatepicker"
+        formControlName="checkOut"
+        placeholder="Check-out Date"
+        required
+      />
+      <mat-datepicker-toggle
+        matSuffix
+        [for]="checkOutDatepicker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #checkOutDatepicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        formControlName="noOfPerson"
+        placeholder="Number of Persons"
+        required
+      />
+    </mat-form-field>
+    <!--
+  <mat-form-field>
+    <mat-label>Booking Status</mat-label>
+    <mat-select formControlName="bookingStatus" required>
+      <mat-option value="Pending">Pending</mat-option>
+      <mat-option value="Cancelled">Cancelled</mat-option>
+      <mat-option value="Approved">Approved</mat-option>
+    </mat-select>
+  </mat-form-field> -->
+
+    <mat-form-field>
+      <input
+        matInput
+        formControlName="arrivalTime"
+        placeholder="Arrival Time"
+        required
+      />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="submitReservationForm()">
+      Submit
+    </button>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>
