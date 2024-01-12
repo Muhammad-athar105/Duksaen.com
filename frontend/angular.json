@@ -24,7 +24,10 @@
               "src/favicon.ico",
               "src/assets",
               "src/assets/img/favicon.png",
-              "src/assets/img/apple-touch-icon.png"
+              "src/assets/img/apple-touch-icon.png",
+              "src/app/app.component.html",
+              "src/app/app.component.css"
+
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
