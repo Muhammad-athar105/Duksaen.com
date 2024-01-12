@@ -59,7 +59,6 @@ import { PasswordDialogComponent } from './components/password-dialog/password-d
 
 @NgModule({
   declarations: [
-    AppComponent,
     LoginComponent,
     ForgotPasswordComponent,
     NotFondComponent,
