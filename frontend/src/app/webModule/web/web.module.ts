@@ -28,6 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { MatInputModule } from '@angular/material/input';
 import { SearchComponent } from './search/search.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
@@ -49,7 +50,7 @@ import { RegisterFormDialogComponent } from './register-form-dialog/register-for
     FiltersComponent,
     SearchComponent,
     RegisterFormDialogComponent,
-  
+
 
 
 
@@ -70,7 +71,7 @@ import { RegisterFormDialogComponent } from './register-form-dialog/register-for
     ReactiveFormsModule,
     MatInputModule,
     MatAutocompleteModule,
-
+    MatExpansionModule,
     MatDialogModule
 
 

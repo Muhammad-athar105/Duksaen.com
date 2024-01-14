@@ -24,10 +24,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/assets/img/favicon.png",
-              "src/assets/img/apple-touch-icon.png",
-              "src/app/app.component.html",
-              "src/app/app.component.css"
-
+              "src/assets/img/apple-touch-icon.png"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
@@ -89,13 +86,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "4mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "150kb",
-                  "maximumError": "150kb"
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
                 }
               ],
               "outputHashing": "all"

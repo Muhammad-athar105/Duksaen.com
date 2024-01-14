@@ -27,11 +27,12 @@
 }
 /* Example styles */
 mat-form-field {
-  width: 200px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 6rem;
+  margin-left: -40px;
+
 }
 
 input.mat-input-element {
@@ -39,11 +40,30 @@ input.mat-input-element {
   color: #333;
 }
 .s011 form .inner-form .main-form .row .input-wrap {
-    background:whitesmoke;
+    /* background:whitesmoke; */
     border-radius: 3px;
-    height: 71px;
+    height: 64px;
+
     position: relative;
-    padding: 10px 15px 10px 48px;
+    left: 10px;
+    background: black;
+    opacity: 0px;
+
+
+    /* margin-right: 100px; */
+    /* padding: 10px 15px 10px 48px; */
 }
+
+@media screen and (width: 320px) and (height: 560px) {
+mat-form-field {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -40px;
+
+}
+}
+
 
 
